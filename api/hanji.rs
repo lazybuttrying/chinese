@@ -1,12 +1,12 @@
-use axum::http::{header, StatusCode, Uri};
+use axum::http::{StatusCode, Uri, header};
 use axum::response::{Html, IntoResponse, Response};
 use axum::routing::get;
 use axum::{Json, Router};
 use bytes::Bytes;
 use serde::{Deserialize, Serialize};
 use tower::ServiceBuilder;
-use vercel_runtime::axum::VercelLayer;
 use vercel_runtime::Error;
+use vercel_runtime::axum::VercelLayer;
 
 const INDEX_HTML: &str = include_str!("../web/index.html");
 const STYLES_CSS: &str = include_str!("../web/styles.css");
