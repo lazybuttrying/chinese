@@ -1,0 +1,202 @@
+{
+  "questions": [
+    {
+      "id": "greeting-hello",
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "meaning": "hello",
+      "prompt": "Which greeting fits this friendly wave?",
+      "choices": ["你好", "谢谢", "再见", "对不起"],
+      "hintPosition": "left top"
+    },
+    {
+      "id": "noun-water",
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "meaning": "water",
+      "prompt": "What is the person asking for?",
+      "choices": ["茶", "水", "米饭", "牛奶"],
+      "hintPosition": "right top"
+    },
+    {
+      "id": "animal-cat",
+      "hanzi": "猫",
+      "pinyin": "māo",
+      "meaning": "cat",
+      "prompt": "Name the animal in the hint.",
+      "choices": ["狗", "鸟", "猫", "鱼"],
+      "hintPosition": "left bottom"
+    },
+    {
+      "id": "verb-eat",
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "meaning": "to eat",
+      "prompt": "What action does the hint show?",
+      "choices": ["喝", "吃", "看", "去"],
+      "hintPosition": "right bottom"
+    }
+  ],
+  "wordbook": [
+    {
+      "hanzi": "人",
+      "pinyin": "rén",
+      "meaning": "person",
+      "radical": "人",
+      "radicalName": "person",
+      "radicalDescription": "The whole character is also the radical. It appears in many characters connected with people."
+    },
+    {
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "meaning": "you",
+      "radical": "亻",
+      "radicalName": "person",
+      "radicalDescription": "亻 is the side form of 人. It often marks characters related to a person or human action."
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "meaning": "good",
+      "radical": "女",
+      "radicalName": "woman",
+      "radicalDescription": "女 is the dictionary radical. Here it is one part of the complete character rather than a full definition."
+    },
+    {
+      "hanzi": "妈",
+      "pinyin": "mā",
+      "meaning": "mother",
+      "radical": "女",
+      "radicalName": "woman",
+      "radicalDescription": "女 places the character in a family of words historically associated with women."
+    },
+    {
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "meaning": "home; family",
+      "radical": "宀",
+      "radicalName": "roof",
+      "radicalDescription": "宀 often appears in characters connected with houses, rooms, shelter, or things kept indoors."
+    },
+    {
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "meaning": "water",
+      "radical": "水",
+      "radicalName": "water",
+      "radicalDescription": "The full character is the radical. Its side form 氵 appears in many liquid- and water-related characters."
+    },
+    {
+      "hanzi": "火",
+      "pinyin": "huǒ",
+      "meaning": "fire",
+      "radical": "火",
+      "radicalName": "fire",
+      "radicalDescription": "火 is both a character and a radical. Its lower form 灬 often suggests heat, cooking, or fire."
+    },
+    {
+      "hanzi": "木",
+      "pinyin": "mù",
+      "meaning": "tree; wood",
+      "radical": "木",
+      "radicalName": "tree",
+      "radicalDescription": "木 often groups characters associated with trees, wood, and objects traditionally made from wood."
+    },
+    {
+      "hanzi": "山",
+      "pinyin": "shān",
+      "meaning": "mountain",
+      "radical": "山",
+      "radicalName": "mountain",
+      "radicalDescription": "The radical commonly appears in characters connected with mountains, cliffs, and landforms."
+    },
+    {
+      "hanzi": "日",
+      "pinyin": "rì",
+      "meaning": "sun; day",
+      "radical": "日",
+      "radicalName": "sun",
+      "radicalDescription": "日 often occurs in characters related to sunlight, daytime, dates, and time."
+    },
+    {
+      "hanzi": "月",
+      "pinyin": "yuè",
+      "meaning": "moon; month",
+      "radical": "月",
+      "radicalName": "moon",
+      "radicalDescription": "As a radical, 月 can represent the moon; a similar-looking form in other characters may come from flesh."
+    },
+    {
+      "hanzi": "雨",
+      "pinyin": "yǔ",
+      "meaning": "rain",
+      "radical": "雨",
+      "radicalName": "rain",
+      "radicalDescription": "雨 often appears above characters for weather and atmospheric phenomena."
+    },
+    {
+      "hanzi": "猫",
+      "pinyin": "māo",
+      "meaning": "cat",
+      "radical": "犭",
+      "radicalName": "animal",
+      "radicalDescription": "犭 is the side form of 犬, meaning dog. It is widely used in characters naming animals."
+    },
+    {
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "meaning": "to eat",
+      "radical": "口",
+      "radicalName": "mouth",
+      "radicalDescription": "口 commonly appears in characters involving the mouth, speech, sounds, eating, or drinking."
+    },
+    {
+      "hanzi": "喝",
+      "pinyin": "hē",
+      "meaning": "to drink",
+      "radical": "口",
+      "radicalName": "mouth",
+      "radicalDescription": "The mouth radical points toward the physical action involved in drinking."
+    },
+    {
+      "hanzi": "饭",
+      "pinyin": "fàn",
+      "meaning": "meal; cooked rice",
+      "radical": "饣",
+      "radicalName": "food",
+      "radicalDescription": "饣 is the simplified side form of 食. It often identifies food, meals, and eating-related words."
+    },
+    {
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "meaning": "tea",
+      "radical": "艹",
+      "radicalName": "grass; plant",
+      "radicalDescription": "艹 is the top form of the grass radical and frequently marks plants, herbs, and plant products."
+    },
+    {
+      "hanzi": "看",
+      "pinyin": "kàn",
+      "meaning": "to look; watch",
+      "radical": "目",
+      "radicalName": "eye",
+      "radicalDescription": "目 groups many characters connected with seeing, eyes, and visual attention."
+    },
+    {
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "meaning": "to speak; say",
+      "radical": "讠",
+      "radicalName": "speech",
+      "radicalDescription": "讠 is the simplified side form of 言. It often appears in words involving language and communication."
+    },
+    {
+      "hanzi": "钱",
+      "pinyin": "qián",
+      "meaning": "money",
+      "radical": "钅",
+      "radicalName": "metal",
+      "radicalDescription": "钅 is the simplified side form of 金. Many characters in this family name metals or metal objects."
+    }
+  ]
+}

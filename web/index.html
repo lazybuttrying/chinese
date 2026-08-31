@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f0e7">
+    <meta name="codex-preview" content="development">
+    <meta
+      name="description"
+      content="Learn beginner Chinese with visual hints, an HSK 1 wordbook, and clear English radical explanations."
+    >
+    <meta property="og:title" content="Hanji — HSK 1 Visual Word Game">
+    <meta
+      property="og:description"
+      content="See the hint, choose the Chinese word, and learn its radical."
+    >
+    <meta property="og:type" content="website">
+    <title>Hanji — HSK 1 Visual Word Game</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="/hsk-hint-panels.png" as="image">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="game-shell">
+      <div class="paper-grain" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <a class="brand" href="#quiz" aria-label="Hanji home">
+          <span aria-hidden="true">汉</span>
+          HANJI
+        </a>
+        <div class="level-chip">HSK 1 · RUST EDITION</div>
+        <div class="score" aria-live="polite">
+          <b id="score">0</b><span id="score-label"> / 4 correct</span>
+        </div>
+      </header>
+
+      <nav class="study-tabs" role="tablist" aria-label="Choose a study mode">
+        <button
+          class="tab-button active"
+          id="game-tab"
+          type="button"
+          role="tab"
+          aria-selected="true"
+          aria-controls="game-panel"
+        >
+          Game
+        </button>
+        <button
+          class="tab-button"
+          id="wordbook-tab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="wordbook-panel"
+          tabindex="-1"
+        >
+          Wordbook
+        </button>
+      </nav>
+
+      <section id="game-panel" class="panel" role="tabpanel" aria-labelledby="game-tab">
+        <div id="quiz" class="game-grid">
+          <div class="intro">
+            <p class="eyebrow">LEARN BY SEEING</p>
+            <h1>One tiny<br><em>moment</em>,<br>one new word.</h1>
+            <p class="intro-copy">
+              Look at the visual hint. Trust your instinct. Then make the Chinese word stick.
+            </p>
+            <div class="progress-wrap">
+              <div class="progress-label">
+                <span id="round-label">ROUND 01</span>
+                <span id="word-total">4 WORDS</span>
+              </div>
+              <div
+                class="quiz-progress"
+                role="progressbar"
+                aria-label="Question progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="25"
+              >
+                <span id="progress-bar" style="width: 25%"></span>
+              </div>
+            </div>
+          </div>
+
+          <article class="quiz-card" aria-live="polite">
+            <div class="card-meta">
+              <span>IMAGE HINT</span>
+              <span id="card-count">01 / 04</span>
+            </div>
+            <div
+              id="hint-frame"
+              class="hint-frame"
+              role="img"
+              aria-label="Visual clue for the current Chinese word"
+            >
+              <div class="hint-label">LOOK → GUESS</div>
+            </div>
+            <h2 id="question-prompt" tabindex="-1">Loading your first visual clue…</h2>
+            <div id="answers" class="answers"></div>
+            <div id="result" class="result" aria-live="assertive" hidden>
+              <div>
+                <strong id="result-title"></strong>
+                <span id="result-detail"></span>
+              </div>
+              <button id="next-button" class="next-button" type="button">
+                <span id="next-label">Next word</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+            <p id="load-error" class="load-error" role="alert" hidden>
+              The word deck could not be loaded. Refresh to try again.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="wordbook-panel"
+        class="panel wordbook"
+        role="tabpanel"
+        aria-labelledby="wordbook-tab"
+        hidden
+      >
+        <div class="wordbook-heading">
+          <div>
+            <p class="eyebrow">HSK 1 STUDY DECK</p>
+            <h1>Wordbook<br><em>&amp; radicals.</em></h1>
+          </div>
+          <aside class="radical-primer">
+            <span class="primer-icon" aria-hidden="true">部</span>
+            <div>
+              <strong>What is a radical?</strong>
+              <p>
+                A radical is the component used to index a Chinese character in a dictionary.
+                It may suggest a broad meaning category, but it is not always the character’s
+                full meaning or complete history.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div class="wordbook-count">
+          <span aria-hidden="true">▤</span>
+          <span id="wordbook-count">20 beginner words</span>
+        </div>
+        <div id="wordbook-grid" class="wordbook-grid"></div>
+      </section>
+
+      <footer>
+        <span>HSK 1 essentials</span>
+        <span>See it. Say it. Keep it.</span>
+        <span>Powered by Rust + Axum</span>
+      </footer>
+    </main>
+    <noscript>
+      <p class="noscript">Hanji needs JavaScript for the interactive word game.</p>
+    </noscript>
+  </body>
+</html>

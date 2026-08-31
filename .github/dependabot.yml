@@ -1,0 +1,25 @@
+version: 2
+updates:
+  - package-ecosystem: cargo
+    directory: /
+    schedule:
+      interval: monthly
+      day: monday
+      time: "09:00"
+      timezone: Asia/Seoul
+    labels:
+      - dependencies
+      - rust
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+      day: monday
+      time: "09:15"
+      timezone: Asia/Seoul
+    labels:
+      - dependencies
+      - automation
+    open-pull-requests-limit: 5
