@@ -1,202 +1,86 @@
 {
   "questions": [
-    {
-      "id": "greeting-hello",
-      "hanzi": "你好",
-      "pinyin": "nǐ hǎo",
-      "meaning": "hello",
-      "prompt": "Which greeting fits this friendly wave?",
-      "choices": ["你好", "谢谢", "再见", "对不起"],
-      "hintPosition": "left top"
-    },
-    {
-      "id": "noun-water",
-      "hanzi": "水",
-      "pinyin": "shuǐ",
-      "meaning": "water",
-      "prompt": "What is the person asking for?",
-      "choices": ["茶", "水", "米饭", "牛奶"],
-      "hintPosition": "right top"
-    },
-    {
-      "id": "animal-cat",
-      "hanzi": "猫",
-      "pinyin": "māo",
-      "meaning": "cat",
-      "prompt": "Name the animal in the hint.",
-      "choices": ["狗", "鸟", "猫", "鱼"],
-      "hintPosition": "left bottom"
-    },
-    {
-      "id": "verb-eat",
-      "hanzi": "吃",
-      "pinyin": "chī",
-      "meaning": "to eat",
-      "prompt": "What action does the hint show?",
-      "choices": ["喝", "吃", "看", "去"],
-      "hintPosition": "right bottom"
-    }
+    {"id":"greetings-thanks","hanzi":"谢谢","pinyin":"xièxie","meaning":"thank you","prompt":"Someone gives you a gift. What do you say?","imageHint":"A person thanks someone after receiving a gift.","choices":["再见","谢谢","对不起","没关系"],"hintPosition":"left top"},
+    {"id":"greetings-goodbye","hanzi":"再见","pinyin":"zàijiàn","meaning":"goodbye; see you again","prompt":"Which expression fits a farewell?","imageHint":"Two people wave goodbye to each other.","choices":["谢谢","没关系","对不起","再见"],"hintPosition":"right top"},
+    {"id":"greetings-sorry","hanzi":"对不起","pinyin":"duìbuqǐ","meaning":"sorry","prompt":"What do you say after bumping into someone?","imageHint":"A person apologizes after accidentally bumping into someone.","choices":["对不起","再见","谢谢","没关系"],"hintPosition":"left bottom"},
+    {"id":"greetings-no-problem","hanzi":"没关系","pinyin":"méi guānxi","meaning":"it is okay; no problem","prompt":"How do you accept an apology?","imageHint":"A person smiles and says that an apology is okay.","choices":["谢谢","再见","没关系","对不起"],"hintPosition":"right bottom"},
+    {"id":"people-i-me","hanzi":"我","pinyin":"wǒ","meaning":"I; me","prompt":"Which word points to the speaker?","imageHint":"A person points to themself.","choices":["他","你","我","她"],"hintPosition":"left top"},
+    {"id":"people-you","hanzi":"你","pinyin":"nǐ","meaning":"you","prompt":"Which word points to the listener?","imageHint":"A person warmly points to the person across from them.","choices":["你","我","他","她"],"hintPosition":"right top"},
+    {"id":"people-he-him","hanzi":"他","pinyin":"tā","meaning":"he; him","prompt":"Which pronoun refers to a man?","imageHint":"A person points to a man standing at a distance.","choices":["我","你","她","他"],"hintPosition":"left bottom"},
+    {"id":"people-she-her","hanzi":"她","pinyin":"tā","meaning":"she; her","prompt":"Which pronoun refers to a woman?","imageHint":"A person points to a woman standing at a distance.","choices":["我","她","他","你"],"hintPosition":"right bottom"},
+    {"id":"family-mother","hanzi":"妈妈","pinyin":"māma","meaning":"mother; mom","prompt":"Who is the mother in the family photo?","imageHint":"A mother holds a child in a family photo.","choices":["妈妈","爸爸","儿子","女儿"],"hintPosition":"left top"},
+    {"id":"family-father","hanzi":"爸爸","pinyin":"bàba","meaning":"father; dad","prompt":"Who is the father in the family photo?","imageHint":"A father stands beside a child in a family photo.","choices":["妈妈","儿子","爸爸","女儿"],"hintPosition":"right top"},
+    {"id":"family-son","hanzi":"儿子","pinyin":"érzi","meaning":"son","prompt":"Which word means son?","imageHint":"Parents stand with their young boy.","choices":["妈妈","儿子","爸爸","女儿"],"hintPosition":"left bottom"},
+    {"id":"family-daughter","hanzi":"女儿","pinyin":"nǚ'ér","meaning":"daughter","prompt":"Which word means daughter?","imageHint":"Parents stand with their young girl.","choices":["妈妈","爸爸","儿子","女儿"],"hintPosition":"right bottom"},
+    {"id":"numbers-one","hanzi":"一","pinyin":"yī","meaning":"one","prompt":"How many apples are shown?","imageHint":"One apple is on a table.","choices":["二","一","三","十"],"hintPosition":"left top"},
+    {"id":"numbers-two","hanzi":"二","pinyin":"èr","meaning":"two","prompt":"How many cups are shown?","imageHint":"Two cups sit next to each other.","choices":["一","十","三","二"],"hintPosition":"right top"},
+    {"id":"numbers-three","hanzi":"三","pinyin":"sān","meaning":"three","prompt":"How many books are shown?","imageHint":"Three books are stacked together.","choices":["三","二","一","十"],"hintPosition":"left bottom"},
+    {"id":"numbers-ten","hanzi":"十","pinyin":"shí","meaning":"ten","prompt":"Which number matches ten fingers?","imageHint":"Two hands hold up all ten fingers.","choices":["一","二","十","三"],"hintPosition":"right bottom"},
+    {"id":"time-today","hanzi":"今天","pinyin":"jīntiān","meaning":"today","prompt":"Which word means today?","imageHint":"Today is circled on a calendar.","choices":["现在","明天","昨天","今天"],"hintPosition":"left top"},
+    {"id":"time-tomorrow","hanzi":"明天","pinyin":"míngtiān","meaning":"tomorrow","prompt":"Which word means tomorrow?","imageHint":"The day after today is marked on a calendar.","choices":["今天","明天","昨天","现在"],"hintPosition":"right top"},
+    {"id":"time-yesterday","hanzi":"昨天","pinyin":"zuótiān","meaning":"yesterday","prompt":"Which word means yesterday?","imageHint":"The day before today is marked on a calendar.","choices":["今天","明天","昨天","现在"],"hintPosition":"left bottom"},
+    {"id":"time-now","hanzi":"现在","pinyin":"xiànzài","meaning":"now; at present","prompt":"Which word means right now?","imageHint":"A person points at a clock to emphasize this moment.","choices":["现在","明天","昨天","今天"],"hintPosition":"right bottom"},
+    {"id":"places-home","hanzi":"家","pinyin":"jiā","meaning":"home; family","prompt":"Which place is someone's home?","imageHint":"A family stands outside a house with warm lights on.","choices":["饭店","学校","家","商店"],"hintPosition":"left top"},
+    {"id":"places-school","hanzi":"学校","pinyin":"xuéxiào","meaning":"school","prompt":"Where do students go to study?","imageHint":"Students with backpacks walk into a school.","choices":["学校","家","饭店","商店"],"hintPosition":"right top"},
+    {"id":"places-restaurant","hanzi":"饭店","pinyin":"fàndiàn","meaning":"restaurant","prompt":"Where can you order a meal?","imageHint":"A diner looks at a menu and orders food.","choices":["家","学校","商店","饭店"],"hintPosition":"left bottom"},
+    {"id":"places-shop","hanzi":"商店","pinyin":"shāngdiàn","meaning":"shop; store","prompt":"Where can you buy things?","imageHint":"A shopper chooses an item from a small store shelf.","choices":["家","商店","饭店","学校"],"hintPosition":"right bottom"},
+    {"id":"food-drink-rice-meal","hanzi":"米饭","pinyin":"mǐfàn","meaning":"cooked rice","prompt":"What food is in the bowl?","imageHint":"A bowl is filled with white cooked rice.","choices":["米饭","茶","苹果","菜"],"hintPosition":"left top"},
+    {"id":"food-drink-tea","hanzi":"茶","pinyin":"chá","meaning":"tea","prompt":"What drink is being poured?","imageHint":"Tea is poured from a teapot into a cup.","choices":["米饭","菜","苹果","茶"],"hintPosition":"right top"},
+    {"id":"food-drink-apple","hanzi":"苹果","pinyin":"píngguǒ","meaning":"apple","prompt":"Which fruit is shown?","imageHint":"One red apple sits on a table.","choices":["米饭","苹果","茶","菜"],"hintPosition":"left bottom"},
+    {"id":"food-drink-dish-vegetable","hanzi":"菜","pinyin":"cài","meaning":"dish; vegetable","prompt":"Which word fits the cooked dish?","imageHint":"A cooked vegetable dish is served on a plate.","choices":["米饭","茶","菜","苹果"],"hintPosition":"right bottom"},
+    {"id":"actions-drink","hanzi":"喝","pinyin":"hē","meaning":"to drink","prompt":"What action does the person do with a cup?","imageHint":"A person lifts a cup and drinks water.","choices":["看","喝","听","说"],"hintPosition":"left top"},
+    {"id":"actions-look-watch","hanzi":"看","pinyin":"kàn","meaning":"to look; watch; read","prompt":"What action does the person do with a book?","imageHint":"A person opens a book and reads it.","choices":["看","喝","听","说"],"hintPosition":"right top"},
+    {"id":"actions-listen","hanzi":"听","pinyin":"tīng","meaning":"to listen","prompt":"What action does the person do with headphones?","imageHint":"A person wears headphones and listens to sound.","choices":["喝","看","听","说"],"hintPosition":"left bottom"},
+    {"id":"actions-speak-say","hanzi":"说","pinyin":"shuō","meaning":"to speak; say","prompt":"What action does the person do while talking?","imageHint":"A person speaks with a speech bubble beside them.","choices":["喝","看","听","说"],"hintPosition":"right bottom"},
+    {"id":"movement-life-come","hanzi":"来","pinyin":"lái","meaning":"to come","prompt":"Which verb shows movement toward here?","imageHint":"A person walks closer toward the speaker.","choices":["住","去","回","来"],"hintPosition":"left top"},
+    {"id":"movement-life-go","hanzi":"去","pinyin":"qù","meaning":"to go","prompt":"Which verb shows movement away from here?","imageHint":"A person walks away toward a destination.","choices":["来","去","回","住"],"hintPosition":"right top"},
+    {"id":"movement-life-return","hanzi":"回","pinyin":"huí","meaning":"to return","prompt":"Which verb means to return?","imageHint":"A person returns home from outside.","choices":["回","去","来","住"],"hintPosition":"left bottom"},
+    {"id":"movement-life-live-stay","hanzi":"住","pinyin":"zhù","meaning":"to live; stay","prompt":"Which verb means to live in a place?","imageHint":"A person points to their home while introducing where they live.","choices":["来","去","住","回"],"hintPosition":"right bottom"},
+    {"id":"descriptions-big","hanzi":"大","pinyin":"dà","meaning":"big; large","prompt":"Which word describes the larger object?","imageHint":"A large ball and a small ball are compared side by side.","choices":["多","小","大","少"],"hintPosition":"left top"},
+    {"id":"descriptions-small","hanzi":"小","pinyin":"xiǎo","meaning":"small; little","prompt":"Which word describes the smaller object?","imageHint":"A small box and a large box are compared side by side.","choices":["小","大","多","少"],"hintPosition":"right top"},
+    {"id":"descriptions-many","hanzi":"多","pinyin":"duō","meaning":"many; much","prompt":"Which word describes a full basket?","imageHint":"A basket is full of fruit.","choices":["大","小","少","多"],"hintPosition":"left bottom"},
+    {"id":"descriptions-few","hanzi":"少","pinyin":"shǎo","meaning":"few; little","prompt":"Which word describes only a few items?","imageHint":"Only a few items remain on a nearly empty shelf.","choices":["大","少","多","小"],"hintPosition":"right bottom"}
   ],
   "wordbook": [
-    {
-      "hanzi": "人",
-      "pinyin": "rén",
-      "meaning": "person",
-      "radical": "人",
-      "radicalName": "person",
-      "radicalDescription": "The whole character is also the radical. It appears in many characters connected with people."
-    },
-    {
-      "hanzi": "你",
-      "pinyin": "nǐ",
-      "meaning": "you",
-      "radical": "亻",
-      "radicalName": "person",
-      "radicalDescription": "亻 is the side form of 人. It often marks characters related to a person or human action."
-    },
-    {
-      "hanzi": "好",
-      "pinyin": "hǎo",
-      "meaning": "good",
-      "radical": "女",
-      "radicalName": "woman",
-      "radicalDescription": "女 is the dictionary radical. Here it is one part of the complete character rather than a full definition."
-    },
-    {
-      "hanzi": "妈",
-      "pinyin": "mā",
-      "meaning": "mother",
-      "radical": "女",
-      "radicalName": "woman",
-      "radicalDescription": "女 places the character in a family of words historically associated with women."
-    },
-    {
-      "hanzi": "家",
-      "pinyin": "jiā",
-      "meaning": "home; family",
-      "radical": "宀",
-      "radicalName": "roof",
-      "radicalDescription": "宀 often appears in characters connected with houses, rooms, shelter, or things kept indoors."
-    },
-    {
-      "hanzi": "水",
-      "pinyin": "shuǐ",
-      "meaning": "water",
-      "radical": "水",
-      "radicalName": "water",
-      "radicalDescription": "The full character is the radical. Its side form 氵 appears in many liquid- and water-related characters."
-    },
-    {
-      "hanzi": "火",
-      "pinyin": "huǒ",
-      "meaning": "fire",
-      "radical": "火",
-      "radicalName": "fire",
-      "radicalDescription": "火 is both a character and a radical. Its lower form 灬 often suggests heat, cooking, or fire."
-    },
-    {
-      "hanzi": "木",
-      "pinyin": "mù",
-      "meaning": "tree; wood",
-      "radical": "木",
-      "radicalName": "tree",
-      "radicalDescription": "木 often groups characters associated with trees, wood, and objects traditionally made from wood."
-    },
-    {
-      "hanzi": "山",
-      "pinyin": "shān",
-      "meaning": "mountain",
-      "radical": "山",
-      "radicalName": "mountain",
-      "radicalDescription": "The radical commonly appears in characters connected with mountains, cliffs, and landforms."
-    },
-    {
-      "hanzi": "日",
-      "pinyin": "rì",
-      "meaning": "sun; day",
-      "radical": "日",
-      "radicalName": "sun",
-      "radicalDescription": "日 often occurs in characters related to sunlight, daytime, dates, and time."
-    },
-    {
-      "hanzi": "月",
-      "pinyin": "yuè",
-      "meaning": "moon; month",
-      "radical": "月",
-      "radicalName": "moon",
-      "radicalDescription": "As a radical, 月 can represent the moon; a similar-looking form in other characters may come from flesh."
-    },
-    {
-      "hanzi": "雨",
-      "pinyin": "yǔ",
-      "meaning": "rain",
-      "radical": "雨",
-      "radicalName": "rain",
-      "radicalDescription": "雨 often appears above characters for weather and atmospheric phenomena."
-    },
-    {
-      "hanzi": "猫",
-      "pinyin": "māo",
-      "meaning": "cat",
-      "radical": "犭",
-      "radicalName": "animal",
-      "radicalDescription": "犭 is the side form of 犬, meaning dog. It is widely used in characters naming animals."
-    },
-    {
-      "hanzi": "吃",
-      "pinyin": "chī",
-      "meaning": "to eat",
-      "radical": "口",
-      "radicalName": "mouth",
-      "radicalDescription": "口 commonly appears in characters involving the mouth, speech, sounds, eating, or drinking."
-    },
-    {
-      "hanzi": "喝",
-      "pinyin": "hē",
-      "meaning": "to drink",
-      "radical": "口",
-      "radicalName": "mouth",
-      "radicalDescription": "The mouth radical points toward the physical action involved in drinking."
-    },
-    {
-      "hanzi": "饭",
-      "pinyin": "fàn",
-      "meaning": "meal; cooked rice",
-      "radical": "饣",
-      "radicalName": "food",
-      "radicalDescription": "饣 is the simplified side form of 食. It often identifies food, meals, and eating-related words."
-    },
-    {
-      "hanzi": "茶",
-      "pinyin": "chá",
-      "meaning": "tea",
-      "radical": "艹",
-      "radicalName": "grass; plant",
-      "radicalDescription": "艹 is the top form of the grass radical and frequently marks plants, herbs, and plant products."
-    },
-    {
-      "hanzi": "看",
-      "pinyin": "kàn",
-      "meaning": "to look; watch",
-      "radical": "目",
-      "radicalName": "eye",
-      "radicalDescription": "目 groups many characters connected with seeing, eyes, and visual attention."
-    },
-    {
-      "hanzi": "说",
-      "pinyin": "shuō",
-      "meaning": "to speak; say",
-      "radical": "讠",
-      "radicalName": "speech",
-      "radicalDescription": "讠 is the simplified side form of 言. It often appears in words involving language and communication."
-    },
-    {
-      "hanzi": "钱",
-      "pinyin": "qián",
-      "meaning": "money",
-      "radical": "钅",
-      "radicalName": "metal",
-      "radicalDescription": "钅 is the simplified side form of 金. Many characters in this family name metals or metal objects."
-    }
+    {"hanzi":"谢谢","pinyin":"xièxie","meaning":"thank you","radical":"讠","radicalName":"speech","radicalDescription":"讠 is the simplified side form of 言. It often appears in words related to speaking and communication."},
+    {"hanzi":"再见","pinyin":"zàijiàn","meaning":"goodbye; see you again","radical":"冂","radicalName":"open border","radicalDescription":"冂 is an enclosing radical. It appears around or near characters with an open-frame shape."},
+    {"hanzi":"对不起","pinyin":"duìbuqǐ","meaning":"sorry","radical":"寸","radicalName":"inch; hand","radicalDescription":"寸 originally related to a hand and a small unit of measure."},
+    {"hanzi":"没关系","pinyin":"méi guānxi","meaning":"it is okay; no problem","radical":"氵","radicalName":"water","radicalDescription":"氵 is the side form of 水 and often marks water-related characters."},
+    {"hanzi":"我","pinyin":"wǒ","meaning":"I; me","radical":"戈","radicalName":"halberd","radicalDescription":"戈 is an ancient weapon radical and part of 我's historical form."},
+    {"hanzi":"你","pinyin":"nǐ","meaning":"you","radical":"亻","radicalName":"person","radicalDescription":"亻 is the side form of 人. It often marks people or human actions."},
+    {"hanzi":"他","pinyin":"tā","meaning":"he; him","radical":"亻","radicalName":"person","radicalDescription":"亻 is the side form of 人 and marks this pronoun as a person."},
+    {"hanzi":"她","pinyin":"tā","meaning":"she; her","radical":"女","radicalName":"woman","radicalDescription":"女 is the woman radical and distinguishes 她 as the pronoun for a woman."},
+    {"hanzi":"妈妈","pinyin":"māma","meaning":"mother; mom","radical":"女","radicalName":"woman","radicalDescription":"女 is the woman radical in 妈, the character used for mother."},
+    {"hanzi":"爸爸","pinyin":"bàba","meaning":"father; dad","radical":"父","radicalName":"father","radicalDescription":"父 is the father radical and also a character meaning father."},
+    {"hanzi":"儿子","pinyin":"érzi","meaning":"son","radical":"儿","radicalName":"child","radicalDescription":"儿 is the child radical and appears in words connected with descendants."},
+    {"hanzi":"女儿","pinyin":"nǚ'ér","meaning":"daughter","radical":"女","radicalName":"woman","radicalDescription":"女 is the woman radical and the first character in daughter."},
+    {"hanzi":"一","pinyin":"yī","meaning":"one","radical":"一","radicalName":"one","radicalDescription":"一 is both the character for one and a basic dictionary radical."},
+    {"hanzi":"二","pinyin":"èr","meaning":"two","radical":"二","radicalName":"two","radicalDescription":"二 is both the character for two and a two-stroke radical."},
+    {"hanzi":"三","pinyin":"sān","meaning":"three","radical":"一","radicalName":"one","radicalDescription":"The three strokes build 三; dictionaries commonly classify it under 一."},
+    {"hanzi":"十","pinyin":"shí","meaning":"ten","radical":"十","radicalName":"ten","radicalDescription":"十 is both the character for ten and a dictionary radical."},
+    {"hanzi":"今天","pinyin":"jīntiān","meaning":"today","radical":"人","radicalName":"person","radicalDescription":"人 is the radical in 今, although its form has changed through history."},
+    {"hanzi":"明天","pinyin":"míngtiān","meaning":"tomorrow","radical":"日","radicalName":"sun","radicalDescription":"日 is the sun radical in 明 and appears in many time-related characters."},
+    {"hanzi":"昨天","pinyin":"zuótiān","meaning":"yesterday","radical":"日","radicalName":"sun","radicalDescription":"日 is the sun radical in 昨 and often appears in characters about days and time."},
+    {"hanzi":"现在","pinyin":"xiànzài","meaning":"now; at present","radical":"王","radicalName":"king; jade form","radicalDescription":"王 is the dictionary radical in 现 and is linked to the jade component."},
+    {"hanzi":"家","pinyin":"jiā","meaning":"home; family","radical":"宀","radicalName":"roof","radicalDescription":"宀 often appears in characters connected with homes, rooms, and shelter."},
+    {"hanzi":"学校","pinyin":"xuéxiào","meaning":"school","radical":"子","radicalName":"child","radicalDescription":"子 is the child radical in 学, fitting a place where children learn."},
+    {"hanzi":"饭店","pinyin":"fàndiàn","meaning":"restaurant","radical":"饣","radicalName":"food","radicalDescription":"饣 is the simplified side form of 食 and often identifies food-related words."},
+    {"hanzi":"商店","pinyin":"shāngdiàn","meaning":"shop; store","radical":"口","radicalName":"mouth","radicalDescription":"口 is the mouth radical in 商; it is a component rather than the meaning of a shop."},
+    {"hanzi":"米饭","pinyin":"mǐfàn","meaning":"cooked rice","radical":"米","radicalName":"rice","radicalDescription":"米 is the character and radical for rice, grain, and food."},
+    {"hanzi":"茶","pinyin":"chá","meaning":"tea","radical":"艹","radicalName":"grass; plant","radicalDescription":"艹 is the grass radical and often marks plants, herbs, and plant products."},
+    {"hanzi":"苹果","pinyin":"píngguǒ","meaning":"apple","radical":"艹","radicalName":"grass; plant","radicalDescription":"艹 is the top radical in 苹 and often appears in plant names."},
+    {"hanzi":"菜","pinyin":"cài","meaning":"dish; vegetable","radical":"艹","radicalName":"grass; plant","radicalDescription":"艹 is the grass radical, fitting vegetables and plant foods."},
+    {"hanzi":"喝","pinyin":"hē","meaning":"to drink","radical":"口","radicalName":"mouth","radicalDescription":"口 often appears in characters involving the mouth, eating, or drinking."},
+    {"hanzi":"看","pinyin":"kàn","meaning":"to look; watch; read","radical":"目","radicalName":"eye","radicalDescription":"目 groups characters connected with seeing, eyes, and attention."},
+    {"hanzi":"听","pinyin":"tīng","meaning":"to listen","radical":"口","radicalName":"mouth","radicalDescription":"口 is the mouth radical in 听 and reflects its historical sound-related form."},
+    {"hanzi":"说","pinyin":"shuō","meaning":"to speak; say","radical":"讠","radicalName":"speech","radicalDescription":"讠 is the simplified side form of 言 and appears in language-related words."},
+    {"hanzi":"来","pinyin":"lái","meaning":"to come","radical":"木","radicalName":"tree","radicalDescription":"木 is the tree radical in 来, reflecting an older character form."},
+    {"hanzi":"去","pinyin":"qù","meaning":"to go","radical":"厶","radicalName":"private; self","radicalDescription":"厶 is a small radical historically associated with private or self."},
+    {"hanzi":"回","pinyin":"huí","meaning":"to return","radical":"囗","radicalName":"enclosure","radicalDescription":"囗 is the enclosure radical surrounding the inner part of 回."},
+    {"hanzi":"住","pinyin":"zhù","meaning":"to live; stay","radical":"亻","radicalName":"person","radicalDescription":"亻 is the side form of 人 and appears in the action word 住."},
+    {"hanzi":"大","pinyin":"dà","meaning":"big; large","radical":"大","radicalName":"big","radicalDescription":"大 is both the character for big and a dictionary radical."},
+    {"hanzi":"小","pinyin":"xiǎo","meaning":"small; little","radical":"小","radicalName":"small","radicalDescription":"小 is both the character for small and a dictionary radical."},
+    {"hanzi":"多","pinyin":"duō","meaning":"many; much","radical":"夕","radicalName":"evening","radicalDescription":"夕 is the evening radical. Two 夕 components form 多."},
+    {"hanzi":"少","pinyin":"shǎo","meaning":"few; little","radical":"小","radicalName":"small","radicalDescription":"小 is the dictionary radical in 少 and helps show its simple stroke structure."}
   ]
 }
