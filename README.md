@@ -39,7 +39,8 @@ in `dist/`.
 ## Deploy on Vercel
 
 1. Import `lazybuttrying/chinese`.
-2. Select the **Rust** framework preset shown in Vercel.
+2. Select **Other** as the framework preset. The committed `vercel.json`
+   enforces this setting for every deployment.
 3. Keep the repository root as the root directory.
 4. Deploy. No environment variables are required.
 
