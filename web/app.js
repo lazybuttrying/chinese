@@ -79,6 +79,7 @@ function validateContent(content) {
   for (const question of content.questions) {
     if (
       typeof question.hanzi !== "string" ||
+      typeof question.imageHint !== "string" ||
       !Array.isArray(question.choices) ||
       question.choices.length !== 4 ||
       !question.choices.includes(question.hanzi)
@@ -136,7 +137,7 @@ function renderQuestion() {
   elements.progress.setAttribute("aria-valuetext", `Question ${round} of ${total}`);
   elements.questionPrompt.textContent = question.prompt;
   elements.hintFrame.style.backgroundPosition = question.hintPosition;
-  elements.hintFrame.setAttribute("aria-label", `Visual clue for ${question.meaning}`);
+  elements.hintFrame.setAttribute("aria-label", question.imageHint);
   elements.result.hidden = true;
   elements.result.className = "result";
   elements.answers.replaceChildren();

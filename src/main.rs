@@ -23,6 +23,7 @@ struct Question {
     pinyin: String,
     meaning: String,
     prompt: String,
+    image_hint: String,
     choices: Vec<String>,
     hint_position: String,
 }
@@ -156,12 +157,13 @@ mod tests {
         let content: AppContent =
             serde_json::from_str(CONTENT_JSON).expect("content.json should deserialize");
 
-        assert_eq!(content.questions.len(), 4);
-        assert_eq!(content.wordbook.len(), 20);
+        assert_eq!(content.questions.len(), 40);
+        assert_eq!(content.wordbook.len(), 40);
 
         for question in content.questions {
             assert_eq!(question.choices.len(), 4);
             assert!(question.choices.contains(&question.hanzi));
+            assert!(!question.image_hint.is_empty());
         }
     }
 }

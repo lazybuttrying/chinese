@@ -15,10 +15,9 @@ health endpoint, and delivers the self-hosted hint image.
 
 ## Project structure
 
-- `api/hanji.rs` — Axum application and Vercel function entrypoint
+- `src/main.rs` — Axum application and Vercel Rust entrypoint
 - `web/` — HTML, CSS, browser interaction, and the shared word deck
 - `public/` — self-hosted visual assets
-- `vercel.json` — sends application routes to the Rust function
 - `scripts/` — static Sites build and validation
 
 The same `web/content.json` file powers both deployments. Rust deserializes it
@@ -43,9 +42,9 @@ in `dist/`.
 3. Keep the repository root as the root directory.
 4. Deploy. No environment variables are required.
 
-Vercel compiles `api/hanji.rs` through the Rust runtime. The rewrite in
-`vercel.json` lets Axum handle the page, assets, `/content.json`, and
-`/api/health`.
+Vercel detects `src/main.rs` through the Rust framework preset and lets Axum
+handle the page, assets, `/content.json`, and `/api/health` with zero routing
+configuration.
 
 ## Add words
 

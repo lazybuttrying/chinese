@@ -16,7 +16,7 @@ vercel_runtime = { version = "2.4", features = ["axum"] }
 
 [[bin]]
 name = "hanji"
-path = "api/hanji.rs"
+path = "src/main.rs"
 
 [profile.release]
 codegen-units = 1
